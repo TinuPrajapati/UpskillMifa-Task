@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* NavBar */
+nav {
+    width: 100%;
+    height: 70px;
+    padding: 0.8vw 5vw;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 2.5vw;
+}
+
+nav .left h1 {
+    font-size: 1.2em;
+}
+
+nav .middle {
+    display: flex;
+}
+
+nav .middle button{
+    display: none;
+}
+
+nav .middle .hamburger-menu {
+    display: flex;
+    gap: 2vw;
+}
+
+nav .middle .hamburger-menu a {
+    color: black;
+    font-size: 0.7em;
+}
+
+nav .right p {
+    color: white;
+    background-color: #0cacfc;
+    font-size: 0.75em;
+    padding: 0.7vw;
+    border-radius: 8px;
+}
+
+/* body */
+.container {
+    width: 100vw;
+    height: calc(100% - 70px);
+    padding: 2vw 5vw;
+    display: flex;
+}
+
+.container .left {
+    width: 60%;
+    height: 100%;
+    padding: 2.5vw 3vw;
+    font-size: 2vw;
+}
+
+.container .left h1 {
+    width: 80%;
+    font-size: 2.2em;
+    margin-bottom: 8px;
+}
+
+#color {
+    color: #0cacfc;
+}
+
+.container .left p {
+    width: 80%;
+    font-size: 0.75em;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.container .left button {
+    font-size: 0.7em;
+    padding: 1.3vw;
+    background-color: #0cacfc;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.container .left button:hover{
+    transform: rotate(-8deg) scale(1.1);
+}
+
+.container .right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .right img {
+    width: 60%;
+    height: 70%;
+}
+
+@media (max-width:768px) {
+    nav {
+        height: 60px;
+        padding: 1vw 5vw;
+        font-size: 4vw;
+    }
+
+    /* body */
+    .container {
+        height: calc(100% - 60px);
+        padding: 3vw 5vw;
+    }
+
+    .container .left {
+        height: 100%;
+        padding: 2vw 4vw;
+        font-size: 2.5vw;
+    }
+
+    .container .left h1 {
+        width: 100%;
+    }
+
+    .container .left p {
+        width: 100%;
+    }
+
+    .container .left button {
+        font-size: 0.9em;
+        padding: 2vw;
+    }
+
+    .container .right img {
+        width: 80%;
+        height: 70%;
+    }
+}
+
+@media (max-width:375px) {
+    nav {
+        height: 50px;
+        padding: 2vw 5vw;
+        font-size: 6vw;
+        position: relative;
+    }
+    nav .middle {
+        flex-direction: column;
+    }
+    nav .middle button{
+        display: block;
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 5vw;
+        position: absolute;
+        right: 5vw;
+        top: 4vw;
+    }
+    nav .middle .hamburger-menu {
+        width: 50%;
+        height: 90vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+        position: absolute;
+        top: 14vw;
+        right: 0;
+        transform: translateX(100%);
+        transition: 0.5s ease-in-out;
+    }
+    nav .middle .hamburger-menu a {
+        font-size: 1em;
+        color: white;
+    }
+    nav .middle button:focus~.hamburger-menu {
+        transform: translateX(0);
+    }
+    nav .right {
+        margin-right: 10vw;
+    }
+    nav .right p {
+        padding: 2vw;
+    }
+    /* body */
+    .container {
+        height: calc(100% - 50px);
+        padding: 3vw 5vw;
+        flex-wrap: wrap;
+    }
+    .container .left {
+        width: 100%;
+        height: 55%;
+        padding: 0;
+        font-size: 3.5vw;
+    }
+    .container .left h1 {
+        width: 80%;
+        margin-bottom: 4px;
+        font-size: 2.4em;
+    }
+    .container .left p {
+        width: 90%;
+        font-size: 1em;
+        margin-bottom: 7px;
+    }
+    .container .left button {
+        font-size: 1em;
+        padding: 3.5vw;
+    }
+    .container .right {
+        width: 100%;
+        height: 45%;
+        justify-content: center;
+    }
+    .container .right img {
+        width: 70%;
+        height: 100%;
+    }
+}

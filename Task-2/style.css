@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+body{
+    background-color: rgb(190, 248, 248);
+    font-size: 2vw;
+}
+
+.heading{
+    color: darkblue;
+    font-size: 0.9em;
+    
+}
+
+.heading span{
+    color: red;
+}
+
+.heading:nth-child(2){
+    background-color: rgb(77, 224, 28);
+}
+.paragraph{
+    font-size: 0.8em;
+}
+
+.paragraph:nth-of-type(2) span{
+    font-size: 1.5em;
+    color: black;
+}
+ul li,ol li{
+    font-size: 0.7em;
+}
+
+ul li:nth-child(1) span{
+
+    color: rgb(252, 0, 0);
+    background-color: yellow;
+}
+ul li:nth-child(2) span{
+    color: rgb(252, 0, 0);
+    background-color: rgb(0, 255, 76);
+}
+ol li:nth-child(2){
+    color: blueviolet;
+}
+ol li:nth-child(3){
+    color: gold;
+}

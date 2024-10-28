@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Laundry Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ++++++++++++++++++++++++++++++ Header part ++++++++++++++++++++++++++++++ -->
+    <header>
+        <div class="left">
+            <h1>Laundry</h1>
+        </div>
+        <nav class="middle">
+            <button type="submit"><i class="ri-menu-line"></i></button>
+            <div class="hamburger-menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact us</a>
+            </div>
+        </nav>
+        <div class="right">
+            <p>Username</p>
+            <i class="ri-logout-box-r-line"></i>
+        </div>
+    </header>
+
+    <!-- ++++++++++++++++++++++++++++++ Container ++++++++++++++++++++++++++++++ -->
+    <div class="container">
+
+        <!-- ++++++++++++++++++++++++++++++ Container left part ++++++++++++++++++++++++++++++ -->
+        <div class="left">
+            <!-- ++++++++++++++++++++++++++++++ Left top box ++++++++++++++++++++++++++++++ -->
+            <div class="upper-box">
+                <h3>Added Items</h3>
+                <div class="table">
+                    <div class="head-row t-row">
+                        <p>S.No.</p>
+                        <p>Services Name</p>
+                        <p>Price</p>
+                    </div>
+                    <div class="t-body"></div>
+                    <div class="sample">
+                        <i class="ri-information-line"></i>
+                        <h4>No item Added</h4>
+                        <p>Add item to the cart from the services bar</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Total amount</p>
+                    <p id="final-amount">₹0</p>
+                </div>
+            </div>
+            <!-- ++++++++++++++++++++++++++++++ left bottom box ++++++++++++++++++++++++++++++ -->
+            <div class="bottom-box">
+                <h3>Book Now</h3>
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="row">
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="abc@gmail.com">
+                        </div>
+                        <div>
+                            <label for="number">Phone Number</label>
+                            <input type="text" id="number" placeholder="xxxxx-xxxxx" maxlength="10">
+                        </div>
+                    </div>
+                    <button type="submit" id="submit-btn">Book Now</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ++++++++++++++++++++++++++++++ Container right part ++++++++++++++++++++++++++++++ -->
+        <div class="right">
+            <div class="service-info">
+                <h2>Browse Our Services</h2>
+                <p>Click on the add to cart button to add the services to your cart or pass skip</p>
+            </div>
+            <div class="services-display">
+                <hr id="upper-line">
+                <div class="img-container">
+                    <img src="img/Dry cleaning.jpg" alt="no image" id="services-img">
+                </div>
+                <div class="row row-1">
+                    <p id="services-name">Dry Cleaning</p>
+                    <p id="services-price">₹199</p>
+                </div>
+                <div class="row row-2">
+                    <button type="submit" id="skip-btn">Skip item <i class="ri-indeterminate-circle-line"></i></button>
+                    <button type="submit" id="add-btn">Add item <i class="ri-add-circle-line"></i></button>
+                </div>
+                <hr id="bottom-line">
+            </div>
+            <div class="bottom">
+                <p><i class="ri-information-line"></i>Add the items to the cart and book now</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

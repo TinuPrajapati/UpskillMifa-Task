@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 10vh 25vw;
+}
+.images{
+    width: 50vw;
+    height: 50vh;
+}
+.images img{
+    width: 50vw;
+    height: 50vh;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+button{
+    width: 50vw;
+    height: 10vh;
+    background: linear-gradient(150deg, yellow, blue);
+    border: none;
+    color: white;
+    font-size: 2vw;
+    display: block;
+    border-radius: 0 0 15px 15px;
+}
